@@ -1,0 +1,14 @@
+<!doctype html>
+<html lang="ja">
+<meta charset="utf-8"><meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Fieldnotes — 小さく進める</title>
+<link rel="stylesheet" href="style.css"><script type="module" src="app.js"></script>
+<body>
+<aside><a class="brand" href="#/all">▧ Fieldnotes<span>PERSONAL WORKSPACE</span></a><p class="eyebrow">WORKSPACE</p><nav><a href="#/all">▦ すべてのタスク</a><a href="#/active">◷ 進行中</a><a href="#/done">✓ 完了したタスク</a><a href="#/about">⌘ このアプリについて</a></nav><div class="aside-bottom"><span class="dot"></span> Local first<br><small>あなたのブラウザーに保存</small></div></aside>
+<div class="workspace"><header><span>ワークスペース / <b id="breadcrumb">タスク</b></span><button popovertarget="menu" class="avatar" aria-label="ワークスペースメニュー">FN</button><div id="menu" popover><strong>Fieldnotes</strong><p>自分のペースで、小さく進める。</p><a href="#/about">使用しているWeb APIを見る →</a></div></header>
+<main id="shell"><div id="problem" role="alert" hidden></div><section id="view"><?start name="view"><p>ワークスペースを準備しています…</p><?end></section></main>
+<footer><span>MADE OF WEB STANDARDS</span><span>フレームワーク 0 · 依存パッケージ 0</span></footer></div>
+<dialog id="editor"><form id="task-form"><div class="dialog-top"><span class="eyebrow">A SMALL NEXT STEP</span><button type="button" id="close-editor" aria-label="閉じる">✕</button></div><h2>タスクを追加</h2><label>タイトル<input name="title" required maxlength="120" autocomplete="off" placeholder="次に取り組むこと"></label><label>メモ<textarea name="note" maxlength="1000" rows="3" placeholder="アイデアや、覚えておきたいこと"></textarea></label><label>カテゴリー<select name="category"><option>デザイン</option><option>開発</option><option>暮らし</option></select></label><button class="primary" type="submit">保存する ↗</button></form></dialog>
+<div id="notice" role="status" aria-live="polite"></div>
+<noscript>このアプリにはJavaScriptが必要です。</noscript>
+</body></html>
